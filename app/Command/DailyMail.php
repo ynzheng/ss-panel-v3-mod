@@ -33,9 +33,9 @@ class DailyMail
             
             if ($user->sendDailyMail==1) {
                 echo "Send daily mail to user: ".$user->id;
-                $subject = Config::get('appName')."-每日流量报告以及公告";
+                $subject = Config::get('appName')." 每日流量报告及公告 / Daily Traffic Report and Announcement";
                 $to = $user->email;
-                $text = "下面是系统中目前的公告:<br><br>".$text1."<br><br>晚安！";
+                $text = "下面是系统中目前的公告:<br>The following are announcments currently on the system:<br>".$text1."<br><br>如不再想收到每日邮件，请<a href="https://bbn.jiayuanyu.com">登录</a>后在左侧资料编辑中修改。<br>If you wish to stop receiving daily email, please <a href="https//bbn.jiayuanyu.com">login</a> and change the setting under Info Edit section on the left.<br><br>晚安！<br>Have a good night!";
                 
                 
                 try {
@@ -52,11 +52,11 @@ class DailyMail
         
         $sts = new Analytics();
         
-        Telegram::Send("各位老爷少奶奶，我来为大家报告一下系统今天的运行状况哈~".
+        Telegram::Send("今日系统状态通知：".
         PHP_EOL.
         "今日签到人数:".$sts->getTodayCheckinUser().PHP_EOL.
         "今日使用总流量:".Tools::flowAutoShow($lastday_total).PHP_EOL.
-        "晚安~"
+        "晚安"
         );
     }
 
