@@ -35,7 +35,7 @@ class DailyMail
                 echo "Send daily mail to user: ".$user->id;
                 $subject = Config::get('appName')." 每日流量报告及公告 / Daily Traffic Report and Announcement";
                 $to = $user->email;
-                $text = "下面是系统中目前的公告:<br>The following are announcments currently on the system:<br>".$text1."<br><br>如不再想收到每日邮件，请<a href="https://bbn.jiayuanyu.com">登录</a>后在左侧资料编辑中修改。<br>If you wish to stop receiving daily email, please <a href="https//bbn.jiayuanyu.com">login</a> and change the setting under Info Edit section on the left.<br><br>晚安！<br>Have a good night!";
+                $text = "下面是系统中目前的公告:<br>The following are announcments currently on the system:<br>".$text1."<br><br>如不再想收到每日邮件，请<a href='https://bbn.jiayuanyu.com'>登录</a>后在左侧资料编辑中修改。<br>If you wish to unsubscribe daily email, please <a href='https//bbn.jiayuanyu.com'>login</a> and change the setting under Info Edit section on the left.<br><br>晚安！<br>Have a good night!";
                 
                 
                 try {
