@@ -143,7 +143,7 @@
 								<div class="card-main">
 									<div class="card-inner">
 											<h2 class="content-sub-heading">其他</h2>
-											<p>本站对原程序有少许代码修改，包含此Staff页面，任何对于任何作者的侵犯内容将被立即修改。本网站代码托管于GitHub由 <a href="https://github.com/yjy11994</a> (RebelliousWhiz) 维护。</p>
+											<p>本站对原程序有少许代码修改，包含此Staff页面，任何对于任何作者的侵犯内容将被立即修改。本网站代码托管于GitHub由 <a href="https://github.com/yjy11994">yjy11994</a> (RebelliousWhiz) 维护。</p>
 									</div>
 								</div>
 							</div>
