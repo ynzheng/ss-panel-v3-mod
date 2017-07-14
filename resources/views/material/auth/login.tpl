@@ -61,8 +61,8 @@
 													<div class="form-group form-group-label">
 														<div class="row">
 															<div class="col-md-10 col-md-push-1">
-																<label class="floating-label" for="code">两步验证码(没有就别填)</label>
-																<input class="form-control" id="code" type="text" placeholder="没有就别填">
+																<label class="floating-label" for="code">两步验证码(未设置请忽略)</label>
+																<input class="form-control" id="code" type="text" placeholder="未设置请忽略">
 															</div>
 														</div>
 													</div>
