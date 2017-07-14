@@ -25,7 +25,7 @@
 					<div class="card">
 						<div class="card-main">
 							<div class="card-inner">
-								<p>{$config["appName"]} 的邀请码，没了的话就烧纸吧。</p>
+								<p>本站为邀请制，该列表显示现有邀请码，不定期更新。</p>
 							</div>
 						</div>
 					</div>

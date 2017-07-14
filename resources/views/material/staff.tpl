@@ -55,7 +55,7 @@
 								<div class="card-main">
 									<div class="card-inner">
 										<h2 class="content-sub-heading">免责声明</h2>
-										<p>您当前所访问的站点使用的是下面所提到的开源程序。您能看到这个页面仅代表这个站点使用了本程序，其使用过程中发生的一切问题需要其自行解决，本程序不承担任何责任。</p>
+										<p>您当前所访问的站点使用的是下面所提到的开源程序。</p>
 									</div>
 								</div>
 							</div>
@@ -98,7 +98,7 @@
 								<div class="card-main">
 									<div class="card-inner">
 											<h2 class="content-sub-heading">监督</h2>
-											<p><a href="https://www.zhaoj.in">（曾经的）glzjin</a></p>
+											<p><a href="https://www.zhaoj.in">glzjin</a></p>
 									</div>
 								</div>
 							</div>
@@ -110,7 +110,7 @@
 									<div class="card-inner">
 											<h2 class="content-sub-heading">作画</h2>
 											<p><a href="https://github.com/Daemonite/">Daemonite</a></p>
-											<p><a href="https://www.zhaoj.in">（曾经的）glzjin</a></p>
+											<p><a href="https://www.zhaoj.in">glzjin</a></p>
 									</div>
 								</div>
 							</div>
@@ -120,8 +120,8 @@
 							<div class="card">
 								<div class="card-main">
 									<div class="card-inner">
-											<h2 class="content-sub-heading">出演</h2>
-											<p><a href="https://www.zhaoj.in">（曾经的）glzjin</a></p>
+											<h2 class="content-sub-heading">协力</h2>
+											<p><a href="https://www.zhaoj.in">glzjin</a></p>
 											<p><a href="http://mengyang.wang/">mengyang</a></p>
 											<p><a href="http://tony.ecy.ren/">tony</a></p>
 									</div>
@@ -134,12 +134,19 @@
 								<div class="card-main">
 									<div class="card-inner">
 											<h2 class="content-sub-heading">鸣谢</h2>
-											<p>所有被引用过代码的同学，以及所有提交过issue的同学。当然，还有在使用这份程序的你我Ta。</p>
+											<p>所有代码被引用者，issue提交者，程序使用者。</p>
 									</div>
 								</div>
 							</div>
 
-
+							<div class="card">
+								<div class="card-main">
+									<div class="card-inner">
+											<h2 class="content-sub-heading">其他</h2>
+											<p>本站对原程序有少许代码修改，包含此Staff页面，任何对于任何作者的侵犯内容将被立即修改。本网站代码托管于GitHub由 <a href="https://github.com/yjy11994</a> (RebelliousWhiz) 维护。</p>
+									</div>
+								</div>
+							</div>
 
 						</section>
 
