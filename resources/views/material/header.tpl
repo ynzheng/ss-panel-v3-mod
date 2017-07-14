@@ -66,7 +66,7 @@
 						<a  href="/"><i class="icon icon-lg">bookmark_border</i>&nbsp;首页</a>
 					</li>
 					<li>
-						<a  href="/tos"><i class="icon icon-lg">text_format</i>&nbsp;TOS</a>
+						<a  href="/tos"><i class="icon icon-lg">text_format</i>&nbsp;用户服务条款</a>
 					</li>
 					<li>
 						<a  href="/code"><i class="icon icon-lg">code</i>&nbsp;邀请码</a>
