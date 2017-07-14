@@ -62,28 +62,6 @@
 									</div>
 								</div>
 							</div>
-							
-							
-							
-							<h2 class="content-sub-heading">其它</h2>
-								
-							<div class="card">
-								<div class="card-main">
-									<div class="card-inner">
-										
-											<p>
-												<ul>
-													<li>本站仅限人类及猫注册使用。</li>
-													<li>TOS更新时用户需要遵守最新TOS。</li>
-											   </ul>
-											</p>
-									</div>
-								</div>
-							</div>
-
-
-		
-							
 						</section>
 			
 			
