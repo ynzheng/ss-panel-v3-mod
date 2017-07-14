@@ -11,7 +11,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-lg-push-0 col-sm-12 col-sm-push-0">
-						<h1 class="content-heading">STAFF</h1>
+						<h1 class="content-heading">版权信息</h1>
 					</div>
 				</div>
 			</div>
