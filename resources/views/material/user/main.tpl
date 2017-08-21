@@ -249,7 +249,7 @@
 							
 							<li>
 								<a href="/user/profile">
-									<i class="icon icon-lg">info</i>&nbsp;账户信息
+									<i class="icon icon-lg">info</i>&nbsp;账号信息
 								</a>
 							</li>
 							
