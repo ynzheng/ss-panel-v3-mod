@@ -12,7 +12,7 @@
 	<main class="content">
 		<div class="content-header ui-content-header">
 			<div class="container">
-				<h1 class="content-heading">我的账户</h1>
+				<h1 class="content-heading">账户信息</h1>
 			</div>
 		</div>
 		<div class="container">
@@ -98,7 +98,7 @@
 
 
 
-						<div class="card margin-bottom-no">
+						<!--<div class="card margin-bottom-no">
 							<div class="card-main">
 								<div class="card-inner">
 									<div class="card-inner">
@@ -138,7 +138,7 @@
 
 								</div>
 							</div>
-						</div>
+						</div>-->
 					</div>
 
 				</div>
