@@ -122,34 +122,6 @@
 						</div>
 
 
-						<div class="card margin-bottom-no">
-							<div class="card-main">
-								<div class="card-inner">
-									<div class="card-inner">
-										<p class="card-heading">主题修改</p>
-										<p>当前主题：{$user->theme}</p>
-										<div class="form-group form-group-label">
-											<label class="floating-label" for="theme">主题</label>
-											<select id="theme" class="form-control">
-												{foreach $themes as $theme}
-													<option value="{$theme}">{$theme}</option>
-												{/foreach}
-											</select>
-										</div>
-
-									</div>
-									<div class="card-action">
-										<div class="card-action-btn pull-left">
-											<button class="btn btn-flat waves-attach" id="theme-update" ><span class="icon">check</span>&nbsp;提交</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-
 					<div class="col-lg-6 col-md-6">
 
 						<div class="card margin-bottom-no">
@@ -195,52 +167,6 @@
 							</div>
 						</div>
 
-
-
-						<div class="card margin-bottom-no">
-							<div class="card-main">
-								<div class="card-inner">
-									<div class="card-inner">
-										<p class="card-heading">两步验证</p>
-										<p>请下载 Google 的两步验证器，扫描下面的二维码。</p>
-										<p><i class="icon icon-lg" aria-hidden="true">android</i><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">&nbsp;Android</a></p>
-										<p><i class="icon icon-lg" aria-hidden="true">tablet_mac</i><a href="https://itunes.apple.com/cn/app/google-authenticator/id388497605?mt=8">&nbsp;iOS</a></p>
-										<p>在没有测试完成绑定成功之前请不要启用。</p>
-										<p>当前设置：{if $user->ga_enable==1} 登录时要求验证 {else} 不要求 {/if}</p>
-										<p>当前服务器时间：{date("Y-m-d H:i:s")}</p>
-										<div class="form-group form-group-label">
-											<label class="floating-label" for="ga-enable">验证设置</label>
-											<select id="ga-enable" class="form-control">
-												<option value="0">不要求</option>
-												<option value="1">要求验证</option>
-											</select>
-										</div>
-
-
-										<div class="form-group form-group-label">
-											<div class="text-center">
-												<div id="ga-qr"></div>
-												密钥：{$user->ga_token}
-											</div>
-										</div>
-
-
-										<div class="form-group form-group-label">
-											<label class="floating-label" for="code">测试一下</label>
-											<input type="text" id="code" placeholder="输入验证器生成的数字来测试" class="form-control">
-										</div>
-
-									</div>
-									<div class="card-action">
-										<div class="card-action-btn pull-left">
-											<a class="btn btn-brand-accent btn-flat waves-attach" href="/user/gareset" ><span class="icon">format_color_reset</span>&nbsp;重置</a>
-											<button class="btn btn-flat waves-attach" id="ga-test" ><span class="icon">extension</span>&nbsp;测试</button>
-											<button class="btn btn-brand btn-flat waves-attach" id="ga-set" ><span class="icon">perm_data_setting</span>&nbsp;设置</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 
 						<div class="card margin-bottom-no">
 							<div class="card-main">
