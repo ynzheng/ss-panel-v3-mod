@@ -96,27 +96,30 @@
 														{/if}
 													</div>
 													<div class="tab-pane fade" id="all_ssr_windows">
-														<p><a href="/ssr-download/ssr-win.7z">点击下载主程序</a>，解压，运行程序，然后您有三种方式导入所有节点<br>
-															(1)<a href="/user/getpcconf?is_mu=0&is_ss=0">点击下载配置文件</a>，右键系统右下角托盘内小飞机，选择【服务器】——【从文件导入服务器】，选择下载的配置文件。<br>
-															(2)<a class="copy-text" data-clipboard-text="{$ssr_url_all}">点击此处复制配置信息</a>，右键小飞机，选择【剪贴板批量导入ssr://链接】。<br>
-															(3)(推荐)右键小飞机，选择【服务器订阅】——【SSR服务器订阅设置】，将订阅地址设置为下面的地址，其他参数留空，确定之后再选择【服务器订阅】——【更新SSR 服务器订阅】。<br>
+														<p><a href="/ssr-download/ssr-win.7z">点击下载主程序</a>，解压，运行程序，然后您有三种方式导入所有节点<br><br><br>
+															(1)<a href="/user/getpcconf?is_mu=0&is_ss=0">点击下载配置文件</a>，右键系统右下角托盘内小飞机，选择【服务器】——【从文件导入服务器】，选择下载的配置文件。<br><br>
+															(2)<a class="copy-text" data-clipboard-text="{$ssr_url_all}">点击此处复制配置信息</a>，右键小飞机，选择【剪贴板批量导入ssr://链接】。<br><br>
+															(3)(推荐)右键小飞机，选择【服务器订阅】——【SSR服务器订阅设置】，将订阅地址设置为下面的地址，其他参数留空，确定之后再选择【服务器订阅】——【更新SSR 服务器订阅】。<br><br>
 															然后右键小飞机，选择【服务器】，选择一个合适的服务器，选择【系统代理模式】——【全局模式】，【代理规则】——【绕过局域网和大陆】，即可正常上网。</p>
 
-														<p>SSR 订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=0</code>
+														<p>SSR 订阅地址：<br>
+														<code>{$baseUrl}/link/{$ssr_sub_token}?mu=0</code>
 														</p>
 													</div>
 													<div class="tab-pane fade" id="all_ssr_mac">
 														<p><a href="/ssr-download/ssr-mac.dmg">点击下载主程序</a>，安装，然后<a href="/user/getpcconf?is_mu=0&is_ss=0">点击下载配置文件</a>，运行程序，右键系统上方托盘内小飞机上，选择【服务器列表】子菜单的【导入服务器配置文件...】，选择下载的配置文件，然后右键选择一个合适的服务器，更新PAC，开启【系统代理】即可正常上网。</p>
 													</div>
 													<div class="tab-pane fade" id="all_ssr_ios">
-														<p>推荐下载<a href="https://itunes.apple.com/cn/app/shadowrocket/id932747118?mt=8">Shadowrocket</a>，然后<strong><u>在Safari中点击</u></strong><a href="{$ssr_url_all}">此处</a>，选择确定，即可自动添加节点。</p>
-														<p>SSR 订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=0</code>
+														<p>推荐下载<a href="https://itunes.apple.com/cn/app/shadowrocket/id932747118?mt=8">Shadowrocket</a>，然后<u><strong>在Safari中点击</strong></u><a href="{$ssr_url_all}">此处</a>，选择确定，即可自动添加节点。</p>
+														<p>SSR 订阅地址：<br>
+														<code>{$baseUrl}/link/{$ssr_sub_token}?mu=0</code>
 														</p>
 													</div>
 													<div class="tab-pane fade" id="all_ssr_android">
 														<p><a href="/ssr-download/ssr-android.apk">点击下载APK</a>，安装，然后在手机<strong><u>默认浏览器中点击</strong></u><a href="{$ssr_url_all}">此处</a>，选择确定，即可自动添加节点，在【路由】设置中选择绕过大陆，点击右上角小飞机开启即可正常上网。<br><br>
 														（高级设置）这里提供一个 ACL 地址，<a href="/link/{$acl_token}">长按复制此处地址</a>到客户端里应用即可。<br><br>
-														（高级设置）SSR 订阅地址，您可以点击左上角【Shadowsock R】标识进入配置文件列表，右下角选择【添加/升级SSR订阅】来自动更新节点：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=0</code><br><br>
+														（高级设置）SSR 订阅地址，您可以点击左上角【Shadowsock R】标识进入配置文件列表，右下角选择【添加/升级SSR订阅】来自动更新节点：<br>
+														<code>{$baseUrl}/link/{$ssr_sub_token}?mu=0</code><br><br>
 														</p>
 													</div>
 													<div class="tab-pane fade" id="all_ssr_router">
