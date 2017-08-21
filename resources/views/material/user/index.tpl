@@ -110,7 +110,8 @@
 														<p><a href="/ssr-download/ssr-mac.dmg">点击下载主程序</a>，安装，然后<a href="/user/getpcconf?is_mu=0&is_ss=0">点击下载配置文件</a>，运行程序，右键系统上方托盘内小飞机上，选择【服务器列表】子菜单的【导入服务器配置文件...】，选择下载的配置文件，然后右键选择一个合适的服务器，更新PAC，开启【系统代理】即可正常上网。</p>
 													</div>
 													<div class="tab-pane fade" id="all_ssr_ios">
-														<p>推荐下载<a href="https://itunes.apple.com/cn/app/shadowrocket/id932747118?mt=8">Shadowrocket</a>，然后<u><strong>在Safari中点击</strong></u><a href="{$ssr_url_all}">此处</a>，选择确定，即可自动添加节点。</p>
+														<p>本站推荐使用<a href="https://itunes.apple.com/us/app/shadowrocket/id932747118?mt=8">Shadowrocket</a>（需付费下载），然后<u><strong>在Safari中点击</strong></u><a href="{$ssr_url_all}">此处</a>，选择确定，即可自动添加节点。</p>
+														<p>因中国地区法规限制，Shadowrocket已在中国区iTunes下架，请注册iTunes其他地区账号（如美国，香港)并在iPhone上登陆后购买下载。您可在iPhone中退出登录iTunes，并在【设置】——【通用】——【语言和地区】——【地区】中选择其他区域后进入App Store注册其他地区账号。</p>
 														<p>SSR 订阅地址：<br>
 														<code>{$baseUrl}/link/{$ssr_sub_token}?mu=0</code>
 														</p>
