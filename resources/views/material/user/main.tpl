@@ -255,7 +255,7 @@
 							
 							<li>
 								<a href="/user/edit">
-									<i class="icon icon-lg">sync_problem</i>&nbsp;连接设置
+									<i class="icon icon-lg">sync_problem</i>&nbsp;用户设置
 								</a>
 							</li>
 							
