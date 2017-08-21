@@ -12,7 +12,7 @@
 	<main class="content">
 		<div class="content-header ui-content-header">
 			<div class="container">
-				<h1 class="content-heading">修改资料</h1>
+				<h1 class="content-heading">账户设置</h1>
 			</div>
 		</div>
 		<div class="container">
@@ -49,6 +49,7 @@
 							</div>
 						</div>
 
+
 						<div class="card margin-bottom-no">
 							<div class="card-main">
 								<div class="card-inner">
@@ -70,32 +71,6 @@
 							</div>
 						</div>
 
-						<div class="card margin-bottom-no">
-							<div class="card-main">
-								<div class="card-inner">
-									<div class="card-inner">
-										<p class="card-heading">加密方式修改</p>
-										<p>注意：SS 和 SSR 支持的加密方式有所不同，请根据实际情况来进行选择！</p>
-										<p>当前加密方式：{$user->method}</p>
-										<div class="form-group form-group-label">
-											<label class="floating-label" for="method">加密方式</label>
-											<select id="method" class="form-control">
-												{$method_list = $config_service->getSupportParam('method')}
-												{foreach $method_list as $method}
-													<option value="{$method}" {if $user->method == $method}selected="selected"{/if}>[{if URL::CanMethodConnect($method) == 2}SS{else}SS/SSR{/if} 可连接] {$method}</option>
-												{/foreach}
-											</select>
-										</div>
-
-									</div>
-									<div class="card-action">
-										<div class="card-action-btn pull-left">
-											<button class="btn btn-flat waves-attach" id="method-update" ><span class="icon">check</span>&nbsp;提交</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 
 						<div class="card margin-bottom-no">
 							<div class="card-main">
@@ -145,57 +120,6 @@
 								</div>
 							</div>
 						</div>
-
-
-
-						<div class="card margin-bottom-no">
-							<div class="card-main">
-								<div class="card-inner">
-									<div class="card-inner">
-										<p class="card-heading">协议&混淆设置</p>
-										<p>当前协议：{$user->protocol}</p>
-										<p>注意1：如果需要兼容原版SS请选择带_compatible的兼容选项！</p>
-										<p>注意2：如果您使用原版 SS 客户端此处请直接设置为 origin！</p>
-										<div class="form-group form-group-label">
-											<label class="floating-label" for="protocol">协议</label>
-											<select id="protocol" class="form-control">
-												{$protocol_list = $config_service->getSupportParam('protocol')}
-												{foreach $protocol_list as $protocol}
-													<option value="{$protocol}" {if $user->protocol == $protocol}selected="selected"{/if}>[{if URL::CanProtocolConnect($protocol) == 3}SS/SSR{else}SSR{/if} 可连接] {$protocol}</option>
-												{/foreach}
-											</select>
-										</div>
-
-									</div>
-
-									<div class="card-inner">
-										<p>当前混淆方式：{$user->obfs}</p>
-										<p>注意1：如果需要兼容原版SS请选择带_compatible的兼容选项！</p>
-										<p>注意2：SS 和 SSR 支持的混淆类型有所不同，simple_obfs_* 为原版 SS 的混淆方式，其他为 SSR 的混淆方式！</p>
-										<div class="form-group form-group-label">
-											<label class="floating-label" for="obfs">混淆方式</label>
-											<select id="obfs" class="form-control">
-												{$obfs_list = $config_service->getSupportParam('obfs')}
-												{foreach $obfs_list as $obfs}
-													<option value="{$obfs}" {if $user->obfs == $obfs}selected="selected"{/if}>[{if URL::CanObfsConnect($obfs) >= 3}SS/SSR{else}{if URL::CanObfsConnect($obfs) == 1}SSR{else}SS{/if}{/if} 可连接] {$obfs}</option>
-												{/foreach}
-											</select>
-										</div>
-									</div>
-
-									<div class="card-action">
-										<div class="card-action-btn pull-left">
-											<button class="btn btn-flat waves-attach" id="ssr-update" ><span class="icon">check</span>&nbsp;提交</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-
-
-
 
 
 						<div class="card margin-bottom-no">
@@ -392,11 +316,6 @@
 			</section>
 		</div>
 	</main>
-
-
-
-
-
 
 
 {include file='user/footer.tpl'}
