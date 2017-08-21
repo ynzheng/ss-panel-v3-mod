@@ -41,7 +41,7 @@
 										<p>您可以在这里查看您的配置信息。<br>同时，这里为您提供了自动化地配置文件生成，包含了所有 Shadowsocks 服务器的信息。</p>
 										<div class="card-inner">
 											<div class="tab-content">
-												<div class="tab-pane fade {if $ssr_prefer}active in{/if}" id="all_ssr">
+												<!--<div class="tab-pane fade {if $ssr_prefer}active in{/if}" id="all_ssr">-->
 													{$pre_user = URL::cloneUser($user)}
 
 													<nav class="tab-nav margin-top-no">
@@ -128,8 +128,8 @@
 														执行完毕后就可到路由器的设置面板里选择 ShadowsocksR 服务器进行连接了。</p>
 													</div>
 
-												</div>
-												<div class="tab-pane fade {if !$ssr_prefer}active in{/if}" id="all_ss">
+												<!--</div>-->
+												<!--<div class="tab-pane fade {if !$ssr_prefer}active in{/if}" id="all_ss">
 													<nav class="tab-nav margin-top-no">
 														<ul class="nav nav-list">
 															<li class="active">
@@ -152,7 +152,7 @@
 															</li>
 														</ul>
 													</nav>
-												</div>
+												</div>-->
 											</div>
 										</div>
 										<div class="card-action">
