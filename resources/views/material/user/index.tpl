@@ -111,7 +111,7 @@
 													</div>
 													<div class="tab-pane fade" id="all_ssr_ios">
 														<p>本站推荐使用<a href="https://itunes.apple.com/us/app/shadowrocket/id932747118?mt=8">Shadowrocket</a>（需付费下载），然后<u><strong>在Safari中点击</strong></u><a href="{$ssr_url_all}">此处</a>，选择确定，即可自动添加节点。</p>
-														<p>因中国地区法规限制，Shadowrocket已在中国区iTunes下架，请注册iTunes其他地区账号（如美国，香港)并在iPhone上登陆后购买下载。您可以参考<a href="https://sspai.com/post/25837">这篇文章</a>和<a href="https://support.apple.com/zh-cn/HT204034">这篇文章</a>来注册其他地区iTunes账号（PC注册请在小飞机中选择【全局模式】）</p>
+														<p>因中国地区法规限制，Shadowrocket已在中国区iTunes下架，请注册iTunes其他地区账号（如美国，香港)并在iPhone上登陆后购买下载。您可以参考<a href="https://sspai.com/post/25837">这篇文章</a>和<a href="https://support.apple.com/zh-cn/HT204034">这篇文章</a>来注册其他地区iTunes账号（PC注册请在小飞机中选择【全局模式】）。</p>
 														<p>SSR 订阅地址：<br>
 														<code>{$baseUrl}/link/{$ssr_sub_token}?mu=0</code>
 														</p>
