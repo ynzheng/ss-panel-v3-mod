@@ -425,7 +425,7 @@ var handlerPopup = function (captchaObj) {
 	// 弹出式需要绑定触发验证码弹出按钮
 	captchaObj.bindOn("#checkin");
 	// 将验证码加到id为captcha的元素里
-	captchaObj.appendTo("#popup-captcha");
+	//captchaObj.appendTo("#popup-captcha");
 	// 更多接口参考：http://www.geetest.com/install/sections/idx-client-sdk.html
 };
 
