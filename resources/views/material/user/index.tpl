@@ -38,7 +38,8 @@
 								<div class="card-main">
 									<div class="card-inner margin-bottom-no">
 										<p class="card-heading">配置信息及配置指导</p>
-										<p>您可以在这里查看您的配置信息。<br>同时，这里为您提供了自动化地配置文件生成，包含了所有 Shadowsocks 服务器的信息。</p>
+										<p>您可以在这里查看您的配置信息。<br><br>
+										同时，这里为您提供了自动化地配置文件生成，包含了所有 Shadowsocks 服务器的信息。</p>
 										<div class="card-inner">
 											<div class="tab-content">
 												<!--<div class="tab-pane fade {if $ssr_prefer}active in{/if}" id="all_ssr">-->
@@ -96,7 +97,7 @@
 														{/if}
 													</div>
 													<div class="tab-pane fade" id="all_ssr_windows">
-														<p><a href="/ssr-download/ssr-win.7z">点击下载主程序</a>，解压，运行程序，然后您有三种方式导入所有节点<br><br><br>
+														<p><a href="/ssr-download/ssr-win.7z">点击下载主程序</a>，解压（如没有软件可以解压，请<a href="https://sparanoid.com/lab/7z/">点击下载开源压缩软件7zip</a>），运行程序（Windows XP请运行donet2.0，XP以后系统请运行donet4.0） ，您有三种方式导入所有节点<br><br><br>
 															(1)<a href="/user/getpcconf?is_mu=0&is_ss=0">点击下载配置文件</a>，右键系统右下角托盘内小飞机，选择【服务器】——【从文件导入服务器】，选择下载的配置文件。<br><br>
 															(2)<a class="copy-text" data-clipboard-text="{$ssr_url_all}">点击此处复制配置信息</a>，右键小飞机，选择【剪贴板批量导入ssr://链接】。<br><br>
 															(3)(推荐)右键小飞机，选择【服务器订阅】——【SSR服务器订阅设置】，将订阅地址设置为下面的地址，其他参数留空，确定之后再选择【服务器订阅】——【更新SSR 服务器订阅】。<br><br>
