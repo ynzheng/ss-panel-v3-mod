@@ -43,7 +43,6 @@ class Pay
         return '
 						<p>请扫码充值，在支付过程中<u><strong>在备注填中填写您的识别数字</strong></u>：<code>'.$user->id.'</code> 。<br><br>
 						（重要）未填写您的识别数字将<u><strong>无法</strong></u>成功支付。如支付后忘记填写识别数字，请提交工单并注明您的账号名和流水号<br></p>
-						<img src="'.Config::get('zfbjk_qrcodeurl_qq').'"/>
 						<img src="'.Config::get('zfbjk_qrcodeurl_wechat').'"/>
 						<img src="'.Config::get('zfbjk_qrcodeurl_alipay').'"/>
 ';
