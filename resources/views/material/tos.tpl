@@ -11,7 +11,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-lg-push-0 col-sm-12 col-sm-push-0">
-						<h1 class="content-heading">TOS</h1>
+						<h1 class="content-heading">用户服务条款</h1>
 					</div>
 				</div>
 			</div>
