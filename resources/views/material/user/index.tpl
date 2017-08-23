@@ -39,7 +39,7 @@
 									<div class="card-inner margin-bottom-no">
 										<p class="card-heading">配置信息及配置指导</p>
 										<p>您可以在这里查看您的配置信息。<br><br>
-										同时，这里为您提供了自动化地配置文件生成，包含了所有 Shadowsocks 服务器的信息。</p>
+										请选择您的系统以查看配置指导。</p>
 										<div class="card-inner">
 											<div class="tab-content">
 												<!--<div class="tab-pane fade {if $ssr_prefer}active in{/if}" id="all_ssr">-->
