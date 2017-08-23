@@ -157,11 +157,11 @@
 												</div>-->
 											</div>
 										</div>
-										<div class="card-action">
+										<!--<div class="card-action">
 											<div class="card-action-btn pull-left">
-												<p><a class="btn btn-brand btn-flat waves-attach" href="/user/url_reset"><span class="icon">close</span>&nbsp;重置配信息中所有链接地址</a></p>
+												<p><a class="btn btn-brand btn-flat waves-attach" href="/user/url_reset"><span class="icon">close</span>&nbsp;重置所有订阅地址</a></p>
 											</div>
-										</div>
+										</div>-->
 									</div>
 
 								</div>
