@@ -1,10 +1,10 @@
+<html>真的，别看我代码了..有话好好说，请联系我yjy11994@gmail.com..<html>
 
 
 
 
 
-
-{include file='user/main.tpl'}
+{*<!--{include file='user/main.tpl'}
 
 
 
@@ -90,4 +90,4 @@
 
 
 
-{include file='user/footer.tpl'}
+{include file='user/footer.tpl'}-->*}

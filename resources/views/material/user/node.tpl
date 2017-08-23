@@ -26,9 +26,11 @@
 							<div class="card-main">
 								<div class="card-inner">
 									<h4>注意!</h4>
-									<p>请勿在任何地方公开节点地址！</p>
-									<p>流量比例为0.5即使用1000MB按照500MB流量记录记录结算.</p>
-									<a href="javascript:void(0);" onClick="urlChange('guide',0,0,0)">如果您不知道如何查看节点的详细信息和二维码，请点我。</a>
+									<p>请勿以任何方式向他人透露配置信息及相关二维码。BBNetwork不会在任何情况下需要您
+提供相关信息。向他人透露您的配置信息将有可能使得服务器遭受攻击，使您的服务不可用
+。</p>
+									<!--<p>流量比例为0.5即使用1000MB按照500MB流量记录记录结算.</p>-->
+									<!--<a href="javascript:void(0);" onClick="urlChange('guide',0,0,0)">如果您不知道如何查看节点的详细信息和二维码，请点我。</a>-->
 								</div>
 							</div>
 						</div>
@@ -73,7 +75,7 @@
 																		<div class="card-main">
 																			<div class="card-inner">
 																			<p class="card-heading" >
-																				<a href="javascript:void(0);" onClick="urlChange('{$node->id}',0,{if $relay_rule != null}{$relay_rule->id}{else}0{/if})">{$node->name}{if $relay_rule != null} - {$relay_rule->dist_node()->name}{/if}</a>
+																				<a href="javascript:void(0);" onClick="urlChange('{$node->id}',0,{if $relay_rule != null}{$relay_rule->id}{else}0{/if})">点击查看节点信息{$node->name}{if $relay_rule != null} - {$relay_rule->dist_node()->name}{/if}</a>
 																				<span class="label label-brand-accent">{$node->status}</span>
 																			</p>
 
@@ -91,9 +93,9 @@
 																			{if $node->sort == 0||$node->sort==7||$node->sort==8||$node->sort==10}
 
 
-																				<p>流量比例：<span class="label label-red">
+																				<!--<p>流量比例：<span class="label label-red">
 																					{$node->traffic_rate}
-																				</span></p>
+																				</span></p>-->
 
 
 

@@ -37,9 +37,8 @@
 							<div class="card">
 								<div class="card-main">
 									<div class="card-inner margin-bottom-no">
-										<p class="card-heading">配置信息及配置指导</p>
-										<p>您可以在这里查看您的配置信息。<br><br>
-										请选择您的系统以查看配置指导。</p>
+										<p class="card-heading">配置信息、配置指导及应用程序下载</p>
+										<p>请选择您的应用系统以查看详细内容。</p>
 										<div class="card-inner">
 											<div class="tab-content">
 												<!--<div class="tab-pane fade {if $ssr_prefer}active in{/if}" id="all_ssr">-->

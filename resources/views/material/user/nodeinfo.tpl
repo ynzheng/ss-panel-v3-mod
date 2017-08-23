@@ -24,7 +24,7 @@
 								<div class="card-main">
 									<div class="card-inner margin-bottom-no">
 										<p class="card-heading">注意！</p>
-										<p>配置文件以及二维码请勿泄露！</p>
+										<p>请勿以任何方式向他人透露配置信息及相关二维码。BBNetwork不会在任何情况下需要您提供相关信息。向他人透露您的配置信息将有可能使得服务器遭受攻击，使您的服务不可用。</p>
 									</div>
 
 								</div>
@@ -39,7 +39,7 @@
 										<p class="card-heading">配置信息</p>
 										<div class="tab-content">
 
-											<nav class="tab-nav margin-top-no">
+											<!--<nav class="tab-nav margin-top-no">
 												<ul class="nav nav-list">
 													<li {if $ssr_prefer}class="active"{/if}>
 														<a class="waves-attach" data-toggle="tab" href="#ssr_info"><i class="icon icon-lg">airplanemode_active</i>&nbsp;ShadowsocksR</a>
@@ -48,7 +48,7 @@
 														<a class="waves-attach" data-toggle="tab" href="#ss_info"><i class="icon icon-lg">flight_takeoff</i>&nbsp;Shadowsocks</a>
 													</li>
 												</ul>
-											</nav>
+											</nav>-->
 											<div class="tab-pane fade {if $ssr_prefer}active in{/if}" id="ssr_info">
 												{if URL::SSRCanConnect($user, $mu)}
 													{$ssr_item = URL::getItem($user, $node, $mu, $relay_rule_id, 0)}
@@ -86,7 +86,7 @@
 
 
 
-						<div class="col-lg-12 col-sm-12">
+						<!--<div class="col-lg-12 col-sm-12">
 							<div class="card">
 								<div class="card-main">
 									<div class="card-inner margin-bottom-no">
@@ -107,9 +107,9 @@
 											{if URL::SSRCanConnect($user, $mu)}
 												<p><i class="icon icon-lg">desktop_windows</i>&nbsp;<a href="/ssr-download/ssr-win.7z">Windows</a></p>
 												<p><i class="icon icon-lg">laptop_mac</i>&nbsp;<a href="/ssr-download/ssr-mac.dmg">Mac OS X</a></p>
-												<p><i class="icon icon-lg">laptop_windows</i>&nbsp;<a href="https://github.com/breakwa11/shadowsocks-rss/wiki/Python-client">Linux</a></p>
+											<p><i class="icon icon-lg">laptop_windows</i>&nbsp;<a href="https://github.com/breakwa11/shadowsocks-rss/wiki/Python-client">Linux</a></p>
 												<p><i class="icon icon-lg">android</i>&nbsp;<a href="/ssr-download/ssr-android.apk">Android</a></p>
-												<p><i class="icon icon-lg">phone_iphone</i>&nbsp;<a href="https://itunes.apple.com/us/app/shadowrocket/id932747118">iOS</a></p>
+												<p><i class="icon icon-lg">phone_iphone</i>&nbsp;<a href="https://itunes.apple.com/us/app/shadowrocket/id932747118?mt=8">iOS</a></p>
 											{else}
 												<p>您好，您目前的 加密方式，混淆，或者协议设置在 ShadowsocksR 客户端下无法连接。请您选用 Shadowsocks 客户端来连接，或者到 资料编辑 页面修改后再来查看此处。</p>
 											{/if}
@@ -131,7 +131,7 @@
 
 								</div>
 							</div>
-						</div>
+						</div>-->
 
 						<div class="col-lg-12 col-sm-12">
 							<div class="card">
@@ -139,7 +139,7 @@
 									<div class="card-inner margin-bottom-no">
 										<p class="card-heading">配置Json</p>
 
-										<nav class="tab-nav margin-top-no">
+										<!--<nav class="tab-nav margin-top-no">
 											<ul class="nav nav-list">
 												<li {if $ssr_prefer}class="active"{/if}>
 													<a class="waves-attach" data-toggle="tab" href="#ssr_json"><i class="icon icon-lg">airplanemode_active</i>&nbsp;ShadowsocksR</a>
@@ -148,7 +148,7 @@
 													<a class="waves-attach" data-toggle="tab" href="#ss_json"><i class="icon icon-lg">flight_takeoff</i>&nbsp;Shadowsocks</a>
 												</li>
 											</ul>
-										</nav>
+										</nav>-->
 										<div class="tab-pane fade {if $ssr_prefer}active in{/if}" id="ssr_json">
 											{if URL::SSRCanConnect($user, $mu)}
 												<textarea class="form-control" rows="6">
@@ -203,7 +203,7 @@
 									<div class="card-inner margin-bottom-no">
 										<p class="card-heading">配置链接</p>
 
-										<nav class="tab-nav margin-top-no">
+										<!--<nav class="tab-nav margin-top-no">
 											<ul class="nav nav-list">
 												<li {if $ssr_prefer}class="active"{/if}>
 													<a class="waves-attach" data-toggle="tab" href="#ssr_url"><i class="icon icon-lg">airplanemode_active</i>&nbsp;ShadowsocksR</a>
@@ -212,19 +212,19 @@
 													<a class="waves-attach" data-toggle="tab" href="#ss_url"><i class="icon icon-lg">flight_takeoff</i>&nbsp;Shadowsocks</a>
 												</li>
 											</ul>
-										</nav>
+										</nav>-->
 										<div class="tab-pane fade {if $ssr_prefer}active in{/if}" id="ssr_url">
 											{if URL::SSRCanConnect($user, $mu)}
-												<p><a href="{URL::getItemUrl($ssr_item, 0)}"/>Android 手机上用默认浏览器打开点我就可以直接添加了(给 ShadowsocksR APP)</a></p>
-												<p><a href="{URL::getItemUrl($ssr_item, 0)}"/>iOS 上用 Safari 打开点我就可以直接添加了(给 Shadowrocket)</a></p>
+												<p>Android用户请<u><strong>使用默认浏览器</strong></u><a href="{URL::getItemUrl($ssr_item, 0)}"/>点击此处</a>即可拖出ShadowsocksR添加节点。</p>
+												<p>ios用户请先下载Shadowrocket，然后<u><strong>使用Safari</strong></u><a href="{URL::getItemUrl($ssr_item, 0)}"/>点击此处</a>即可拖出Shadowrocket添加节点</p>
 											{else}
 												<p>您好，您目前的 加密方式，混淆，或者协议设置在 ShadowsocksR 客户端下无法连接。请您选用 Shadowsocks 客户端来连接，或者到 资料编辑 页面修改后再来查看此处。</p>
 											{/if}
 										</div>
 										<div class="tab-pane fade {if !$ssr_prefer}active in{/if}" id="ss_url">
 											{if URL::SSCanConnect($user, $mu)}
-												<p><a href="{URL::getItemUrl($ss_item, 1)}"/>Android 手机上用默认浏览器打开点我就可以直接添加了(给 Shadowsocks)</a></p>
-												<p><a href="{URL::getItemUrl($ss_item, 1)}"/>iOS 上用 Safari 打开点我就可以直接添加了(给 Shadowrocket)</a></p>
+												<p>Android用户请<u><strong>使用默认浏览器</strong></u><a href="{URL::getItemUrl($ss_item, 1)}"/>点击此处</a>即可拖出ShadowsocksR添加节点。</p>
+												<p>ios用户请先下载Shadowrocket，然后<u><strong>使用Safari</strong></u><a href="{URL::getItemUrl($ss_item, 1)}"/>点击此处</a>即可拖出Shadowrocket添加节点</p>
 											{else}
 												<p>您好，您目前的 加密方式，混淆，或者协议设置在 Shadowsocks 客户端下无法连接。请您选用 ShadowsocksR 客户端来连接，或者到 资料编辑 页面修改后再来查看此处。</p>
 											{/if}
@@ -242,7 +242,7 @@
 										<p class="card-heading">配置二维码</p>
 
 
-										<nav class="tab-nav margin-top-no">
+										<!--<nav class="tab-nav margin-top-no">
 											<ul class="nav nav-list">
 												<li {if $ssr_prefer}class="active"{/if}>
 													<a class="waves-attach" data-toggle="tab" href="#ssr_qrcode"><i class="icon icon-lg">airplanemode_active</i>&nbsp;ShadowsocksR</a>
@@ -251,7 +251,7 @@
 													<a class="waves-attach" data-toggle="tab" href="#ss_qrcode"><i class="icon icon-lg">flight_takeoff</i>&nbsp;Shadowsocks</a>
 												</li>
 											</ul>
-										</nav>
+										</nav>-->
 										<div class="tab-pane fade {if $ssr_prefer}active in{/if}" id="ssr_qrcode">
 											{if URL::SSRCanConnect($user, $mu)}
 												<div class="text-center">
