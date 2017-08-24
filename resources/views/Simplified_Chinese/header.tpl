@@ -62,6 +62,23 @@
 			<div class="menu-content">
 				<a class="menu-logo" href="/"><i class="icon icon-lg">restaurant_menu</i>&nbsp;Menu</a>
 				<ul class="nav">
+					{if $user->isLogin}
+					<li>
+						<a  href="/"><i class="icon icon-lg">bookmark_border</i>&nbsp;主页</a>
+					</li>
+					<li>
+						<a  href="/tos"><i class="icon icon-lg">text_format</i>&nbsp;用户服务条款</a>
+					</li>
+					<li>
+						<a  href="/code"><i class="icon icon-lg">code</i>&nbsp;邀请码</a>
+					</li>
+					<li>
+						<a  href="/user"><i class="icon icon-lg">person</i>&nbsp;用户中心</a>
+					</li>
+					<li>
+						<a  href="/user/logout"><i class="icon icon-lg">call_missed_outgoing</i>&nbsp;退出</a>
+					</li>
+					{else}
 					<li>
 						<a  href="/"><i class="icon icon-lg">bookmark_border</i>&nbsp;Home</a>
 					</li>
@@ -71,14 +88,12 @@
 					<li>
 						<a  href="/code"><i class="icon icon-lg">code</i>&nbsp;Invitation Code</a>
 					</li>
-					{if $user->isLogin}
 					<li>
 						<a  href="/user"><i class="icon icon-lg">person</i>&nbsp;User Center</a>
 					</li>
 					<li>
 						<a  href="/user/logout"><i class="icon icon-lg">call_missed_outgoing</i>&nbsp;Exit</a>
 					</li>
-					{else}
 					<li>
 						<a  href="/auth/login"><i class="icon icon-lg">vpn_key</i>&nbsp;Login</a>
 					</li>
