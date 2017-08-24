@@ -25,7 +25,7 @@
 									<div class="form-group form-group-label">
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
-													<label class="floating-label" for="name">Language / 语言 / 語言yu'yan</label>
+													<label class="floating-label" for="name">Language / 语言 / 語言</label>
 													<select class="form-control" id="theme">
 														<option></option>
 														<option value="English">English</option>
@@ -56,9 +56,9 @@
 										<div class="form-group form-group-label">
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
-													<label class="floating-label" for="email_code">CAPTCHA recieved by Email / 收到的邮箱验证码 / 收到的郵箱驗證碼</label>
+													<label class="floating-label" for="email_code">CAPTCHA recieved by Email / 邮箱验证码 / 郵箱驗證碼</label><br><br>
 													<input class="form-control" id="email_code" type="text">
-													<button id="email_verify" class="btn btn-block btn-brand-accent waves-attach waves-light">获取验证码</button>
+													<button id="email_verify" class="btn btn-block btn-brand-accent waves-attach waves-light">Get your CAPTCHA / 获取验证码 / 獲取驗證碼</button>
 												</div>
 											</div>
 										</div>
@@ -76,7 +76,7 @@
 										<div class="form-group form-group-label">
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
-													<label class="floating-label" for="repasswd">Confirm your password / 请再次输入密码 / 請再次輸入密碼</label>
+													<label class="floating-label" for="repasswd">Confirm your password / 再次输入密码 / 再次輸入密碼</label>
 													<input class="form-control" id="repasswd" type="password">
 												</div>
 											</div>
