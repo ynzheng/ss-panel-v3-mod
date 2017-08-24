@@ -65,7 +65,7 @@ class AuthController extends BaseController
             $ret = Geetest::verify($request->getParam('geetest_challenge'), $request->getParam('geetest_validate'), $request->getParam('geetest_seccode'));
             if (!$ret) {
                 $res['ret'] = 0;
-                $res['msg'] = "系统无法接受您的验证结果，请刷新页面后重试。";
+                $res['msg'] = "Please refresh and try again. / 请刷新后重试。 / 請刷新后重試。";
                 return $response->getBody()->write(json_encode($res));
             }
         }
@@ -75,13 +75,13 @@ class AuthController extends BaseController
 
         if ($user == null) {
             $rs['ret'] = 0;
-            $rs['msg'] = "401 邮箱或者密码错误";
+            $rs['msg'] = "Email or password is incorrect / 邮箱或者密码错误 / 電子信箱或者密碼錯誤";
             return $response->getBody()->write(json_encode($rs));
         }
 
         if (!Hash::checkPassword($user->pass, $passwd)) {
             $rs['ret'] = 0;
-            $rs['msg'] = "402 邮箱或者密码错误";
+            $rs['msg'] = "Email or password is incorrect / 邮箱或者密码错误 / 電子信箱或者密碼錯誤";
 
 
             $loginip=new LoginIp();
@@ -112,7 +112,7 @@ class AuthController extends BaseController
 
         Auth::login($user->id, $time);
         $rs['ret'] = 1;
-        $rs['msg'] = "欢迎回来";
+        $rs['msg'] = "Welcome back / 欢迎回来 / 歡迎回來";
 
         $loginip=new LoginIp();
         $loginip->ip=$_SERVER["REMOTE_ADDR"];
@@ -148,7 +148,7 @@ class AuthController extends BaseController
 
         Auth::login($user->id, $time);
         $rs['ret'] = 1;
-        $rs['msg'] = "欢迎回来";
+        $rs['msg'] = "Welcome back / 欢迎回来 / 歡迎回來";
 
         $loginip=new LoginIp();
         $loginip->ip=$_SERVER["REMOTE_ADDR"];
@@ -190,14 +190,14 @@ class AuthController extends BaseController
 
             if ($email=="") {
                 $res['ret'] = 0;
-                $res['msg'] = "哦？你填了你的邮箱了吗？";
+                $res['msg'] = "Email is Empty / 邮箱未填写 / 電子信箱未填寫";
                 return $response->getBody()->write(json_encode($res));
             }
 
             // check email format
             if (!Check::isEmailLegal($email)) {
                 $res['ret'] = 0;
-                $res['msg'] = "邮箱无效";
+                $res['msg'] = "Email is not valid / 邮箱无效 / 電子信箱無效";
                 return $response->getBody()->write(json_encode($res));
             }
 
@@ -205,14 +205,14 @@ class AuthController extends BaseController
             $user = User::where('email', '=', $email)->first();
             if ($user!=null) {
                 $res['ret'] = 0;
-                $res['msg'] = "此邮箱已经注册";
+                $res['msg'] = "This Email is already registered / 此邮箱已经注册 / 此電子信箱已經注冊";
                 return $response->getBody()->write(json_encode($res));
             }
 
             $ipcount = EmailVerify::where('ip', '=', $_SERVER["REMOTE_ADDR"])->where('expire_in', '>', time())->count();
             if ($ipcount>=(int)Config::get('email_verify_iplimit')) {
                 $res['ret'] = 0;
-                $res['msg'] = "此IP请求次数过多";
+                $res['msg'] = "IP too many submission, eaze up mate.";
                 return $response->getBody()->write(json_encode($res));
             }
 
@@ -220,7 +220,7 @@ class AuthController extends BaseController
             $mailcount = EmailVerify::where('email', '=', $email)->where('expire_in', '>', time())->count();
             if ($mailcount>=3) {
                 $res['ret'] = 0;
-                $res['msg'] = "此邮箱请求次数过多";
+                $res['msg'] = "Email too many submission, ease up mate.";
                 return $response->getBody()->write(json_encode($res));
             }
 
@@ -233,7 +233,7 @@ class AuthController extends BaseController
             $ev->code = $code;
             $ev->save();
 
-            $subject = Config::get('appName')."- 验证邮件";
+            $subject = Config::get('appName')." - CAPTCHA / 验证码 / 驗證碼";
 
             try {
                 Mail::send($email, $subject, 'auth/verify.tpl', [
@@ -246,7 +246,7 @@ class AuthController extends BaseController
             }
 
             $res['ret'] = 1;
-            $res['msg'] = "验证码发送成功，请查收邮件。";
+            $res['msg'] = "CAPTCHA sent / 验证码已发送 / 驗證碼已發送";
             return $response->getBody()->write(json_encode($res));
         }
     }
@@ -268,7 +268,7 @@ class AuthController extends BaseController
             $ret = Geetest::verify($request->getParam('geetest_challenge'), $request->getParam('geetest_validate'), $request->getParam('geetest_seccode'));
             if (!$ret) {
                 $res['ret'] = 0;
-                $res['msg'] = "系统无法接受您的验证结果，请刷新页面后重试。";
+                $res['msg'] = "Error, please refresh the page and try again. / 错误，请刷新后重试。 / 錯誤， 請刷新后重試。";
                 return $response->getBody()->write(json_encode($res));
             }
         }
@@ -277,7 +277,7 @@ class AuthController extends BaseController
             $c = InviteCode::where('code', $code)->first();
             if ($c == null) {
                 $res['ret'] = 0;
-                $res['msg'] = "邀请码无效";
+                $res['msg'] = "CAOTCHA not valid. / 邀请码无效。 / 邀請碼無效。";
                 return $response->getBody()->write(json_encode($res));
             }
         }
@@ -285,7 +285,7 @@ class AuthController extends BaseController
         // check email format
         if (!Check::isEmailLegal($email)) {
             $res['ret'] = 0;
-            $res['msg'] = "邮箱无效";
+            $res['msg'] = "Email is not valid. / 邮箱无效。 / 電子信箱無效。";
             return $response->getBody()->write(json_encode($res));
         }
 
@@ -293,7 +293,7 @@ class AuthController extends BaseController
             $mailcount = EmailVerify::where('email', '=', $email)->where('code', '=', $emailcode)->where('expire_in', '>', time())->first();
             if ($mailcount == null) {
                 $res['ret'] = 0;
-                $res['msg'] = "您的邮箱验证码不正确";
+                $res['msg'] = "Email CAPTCHA is incorrect. / 邮箱验证码不正确。 / 電子信箱驗證碼不正確。";
                 return $response->getBody()->write(json_encode($res));
             }
             EmailVerify::where('email', '=', $email)->delete();
@@ -302,14 +302,14 @@ class AuthController extends BaseController
         // check pwd length
         if (strlen($passwd)<8) {
             $res['ret'] = 0;
-            $res['msg'] = "密码太短";
+            $res['msg'] = "Password too short. / 密码太短。 / 密碼太短。";
             return $response->getBody()->write(json_encode($res));
         }
 
         // check pwd re
         if ($passwd != $repasswd) {
             $res['ret'] = 0;
-            $res['msg'] = "两次密码输入不符";
+            $res['msg'] = "Please confirm your password. / 两次密码输入不符。/ 兩次密碼輸入不符。";
             return $response->getBody()->write(json_encode($res));
         }
 
@@ -317,20 +317,20 @@ class AuthController extends BaseController
         $user = User::where('email', $email)->first();
         if ($user != null) {
             $res['ret'] = 0;
-            $res['msg'] = "邮箱已经被注册了";
+            $res['msg'] = "Your Email has been registered. / 邮箱已经被注册了。 / 電子信箱已經被注冊了。";
             return $response->getBody()->write(json_encode($res));
         }
 
         if ($imtype==""||$wechat=="") {
             $res['ret'] = 0;
-            $res['msg'] = "要填上你的联络方式哦";
+            $res['msg'] = "Please add your contact. / 请填上你的联络方式。 / 請填上你的聯絡方式。";
             return $response->getBody()->write(json_encode($res));
         }
 
         $user = User::where('im_value', $wechat)->where('im_type', $imtype)->first();
         if ($user != null) {
             $res['ret'] = 0;
-            $res['msg'] = "此联络方式已经被注册了";
+            $res['msg'] = "This contact is already registered. / 此联络方式已被注册。 / 此聯絡方式已被注冊。";
             return $response->getBody()->write(json_encode($res));
         }
 
@@ -389,7 +389,7 @@ class AuthController extends BaseController
 
         if ($user->save()) {
             $res['ret'] = 1;
-            $res['msg'] = "注册成功";
+            $res['msg'] = "Registration Succeeded / 注册成功 / 注冊成功";
 
             Duoshuo::add($user);
 

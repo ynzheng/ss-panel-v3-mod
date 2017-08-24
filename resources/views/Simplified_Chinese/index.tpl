@@ -24,7 +24,7 @@
 								<div class="card">
 									<div class="card-main">
 										<div class="card-inner">
-											<p>欢迎访问 {$config["appName"]}</p>
+											<p><q>The legitimate object of government is to do for a community of people whatever they need to have done, but can not do at all, or can not so well do, for themselves – in their separate, and individual capacities.</q> -- Abraham Lincoln</p>
 										</div>
 									</div>
 								</div>
@@ -35,9 +35,9 @@
 								<div class="card card-brand">
 									<div class="card-main">
 										<div class="card-inner">
-											<p class="card-heading">用户面板</p>
+											<p class="card-heading">用户中心</p>
 											<p>
-												您可以点击按钮进入面板。
+												您可以点击按钮进入用户中心。
 											</p>
 										</div>
 										<div class="card-action">
@@ -53,14 +53,14 @@
 								<div class="card card-brand">
 									<div class="card-main">
 										<div class="card-inner">
-											<p class="card-heading">注册</p>
+											<p class="card-heading">Register</p>
 											<p>
-												没有账户？请点击注册。
+												Not yet a memeber? Click to register.
 											</p>
 										</div>
 										<div class="card-action">
 											<div class="card-action-btn pull-left">
-												<a class="btn btn-flat waves-attach waves-light waves-effect" href="/auth/register"><span class="icon">pregnant_woman</span>&nbsp;注册</a>
+												<a class="btn btn-flat waves-attach waves-light waves-effect" href="/auth/register"><span class="icon">pregnant_woman</span>&nbsp;Register</a>
 											</div>
 										</div>
 									</div>
@@ -71,14 +71,14 @@
 								<div class="card card-brand-accent">
 									<div class="card-main">
 										<div class="card-inner">
-											<p class="card-heading">登录</p>
+											<p class="card-heading">Login</p>
 											<p>
-												已有账户？请点击登录。
+												Already a memeber? Click to login.
 											</p>
 										</div>
 										<div class="card-action">
 											<div class="card-action-btn pull-left">
-												<a class="btn btn-flat waves-attach waves-light waves-effect" href="/auth/login"><span class="icon">vpn_key</span>&nbsp;登录</a>
+												<a class="btn btn-flat waves-attach waves-light waves-effect" href="/auth/login"><span class="icon">vpn_key</span>&nbsp;Login</a>
 											</div>
 										</div>
 									</div>

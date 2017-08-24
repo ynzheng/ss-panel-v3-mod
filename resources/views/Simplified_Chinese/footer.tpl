@@ -1,6 +1,6 @@
 	<footer class="ui-footer">
 		<div class="container">
-			&copy; {$config["appName"]} 2016-2017 <a href="/staff">版权信息</a> {if $config["enable_analytics_code"] == 'true'}{include file='analytics.tpl'}{/if}
+			<a href="/staff">&copy; {$config["appName"]} 2016-2017</a> {if $config["enable_analytics_code"] == 'true'}{include file='analytics.tpl'}{/if}
 		</div>
 	</footer>
 

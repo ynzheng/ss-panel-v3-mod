@@ -11,7 +11,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-lg-push-0 col-sm-12 col-sm-push-0">
-						<h1 class="content-heading">版权信息</h1>
+						<h1 class="content-heading">Copy Right</h1>
 					</div>
 				</div>
 			</div>
@@ -23,7 +23,7 @@
 							<div class="card">
 								<div class="card-main">
 									<div class="card-inner">
-										<h2 class="content-sub-heading">版权协议</h2>
+										<h2 class="content-sub-heading">License</h2>
 										<p>
 											<p>The MIT License (MIT)</p>
 
@@ -54,8 +54,8 @@
 							<div class="card">
 								<div class="card-main">
 									<div class="card-inner">
-										<h2 class="content-sub-heading">免责声明</h2>
-										<p>您当前所访问的站点使用的是下面所提到的开源程序。</p>
+										<h2 class="content-sub-heading">Disclaimer</h2>
+										<p>The wesite you are visiting is based on following open-source projects.</p>
 									</div>
 								</div>
 							</div>
@@ -64,8 +64,8 @@
 							<div class="card">
 								<div class="card-main">
 									<div class="card-inner">
-										<h2 class="content-sub-heading">本程序参与人员列表</h2>
-										    <p>此列表为参与到 <a href="https://github.com/glzjin/ss-panel-v3-mod">ss-panel-v3 glzjin mod {$config["version"]}</a> 中的人员，在此表示感谢。</p>
+										<h2 class="content-sub-heading">Program Developers</h2>
+										    <p> This page refers all the developers <a href="https://github.com/glzjin/ss-panel-v3-mod">ss-panel-v3 glzjin mod {$config["version"]}</a>. Thanks to their excellent works!</p>
 									</div>
 								</div>
 							</div>
@@ -75,7 +75,7 @@
 							<div class="card">
 								<div class="card-main">
 									<div class="card-inner">
-											<h2 class="content-sub-heading">原作</h2>
+											<h2 class="content-sub-heading">Original Project Developer</h2>
 											<p><a href="https://github.com/orvice/">orvice</a></p>
 									</div>
 								</div>
@@ -85,7 +85,7 @@
 							<div class="card">
 								<div class="card-main">
 									<div class="card-inner">
-											<h2 class="content-sub-heading">现阶段维护</h2>
+											<h2 class="content-sub-heading">Current Maintainer</h2>
 											<p><a href="https://github.com/esdeathlove/">esdeathlove</a></p>
 									</div>
 								</div>
@@ -97,7 +97,7 @@
 							<div class="card">
 								<div class="card-main">
 									<div class="card-inner">
-											<h2 class="content-sub-heading">监督</h2>
+											<h2 class="content-sub-heading">Supervision</h2>
 											<p><a href="https://www.zhaoj.in">glzjin</a></p>
 									</div>
 								</div>
@@ -108,7 +108,7 @@
 							<div class="card">
 								<div class="card-main">
 									<div class="card-inner">
-											<h2 class="content-sub-heading">作画</h2>
+											<h2 class="content-sub-heading">Painting</h2>
 											<p><a href="https://github.com/Daemonite/">Daemonite</a></p>
 											<p><a href="https://www.zhaoj.in">glzjin</a></p>
 									</div>
@@ -120,7 +120,7 @@
 							<div class="card">
 								<div class="card-main">
 									<div class="card-inner">
-											<h2 class="content-sub-heading">协力</h2>
+											<h2 class="content-sub-heading">Co-operation</h2>
 											<p><a href="https://www.zhaoj.in">glzjin</a></p>
 											<p><a href="http://mengyang.wang/">mengyang</a></p>
 											<p><a href="http://tony.ecy.ren/">tony</a></p>
@@ -133,8 +133,8 @@
 							<div class="card">
 								<div class="card-main">
 									<div class="card-inner">
-											<h2 class="content-sub-heading">鸣谢</h2>
-											<p>所有代码被引用者，issue提交者，程序使用者。</p>
+											<h2 class="content-sub-heading">Appreciation</h2>
+											<p>Thanks to all the developers, issue submitters, program users.</p>
 									</div>
 								</div>
 							</div>
@@ -142,8 +142,8 @@
 							<div class="card">
 								<div class="card-main">
 									<div class="card-inner">
-											<h2 class="content-sub-heading">其他</h2>
-											<p>本站对原程序有少许代码修改，包含此Staff页面，任何对于任何作者的侵犯内容将被立即修改。本网站代码托管于GitHub由 <a href="https://github.com/yjy11994">yjy11994</a> (RebelliousWhiz) 维护。</p>
+											<h2 class="content-sub-heading">Comments</h2>
+											<p>This website is maintained and modified by <a href="https://github.com/yjy11994">yjy11994</a> (RebelliousWhiz) by GitHub. This page has also been modified. Any copy issue will be handled immediately upon request.</p>
 									</div>
 								</div>
 							</div>

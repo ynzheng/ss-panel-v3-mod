@@ -60,7 +60,11 @@
 	<nav aria-hidden="true" class="menu menu-left nav-drawer nav-drawer-md" id="ui_menu" tabindex="-1">
 		<div class="menu-scroll">
 			<div class="menu-content">
+				{if $user->isLogin}
+				<a class="menu-logo" href="/"><i class="icon icon-lg">restaurant_menu</i>&nbsp;菜单</a>
+				{else}
 				<a class="menu-logo" href="/"><i class="icon icon-lg">restaurant_menu</i>&nbsp;Menu</a>
+				{/if}
 				<ul class="nav">
 					{if $user->isLogin}
 					<li>
@@ -87,12 +91,6 @@
 					</li>
 					<li>
 						<a  href="/code"><i class="icon icon-lg">code</i>&nbsp;Invitation Code</a>
-					</li>
-					<li>
-						<a  href="/user"><i class="icon icon-lg">person</i>&nbsp;User Center</a>
-					</li>
-					<li>
-						<a  href="/user/logout"><i class="icon icon-lg">call_missed_outgoing</i>&nbsp;Exit</a>
 					</li>
 					<li>
 						<a  href="/auth/login"><i class="icon icon-lg">vpn_key</i>&nbsp;Login</a>
