@@ -56,16 +56,9 @@
 										<div class="form-group form-group-label">
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
+													<label class="floating-label" for="email_code">CAPTCHA recieved by Email / 邮箱验证码 / 郵箱驗證碼</label><br><br>
 													<input class="form-control" id="email_code" type="text">
 													<button id="email_verify" class="btn btn-block btn-brand-accent waves-attach waves-light">Get your CAPTCHA / 获取验证码 / 獲取驗證碼</button>
-												</div>
-											</div>
-										</div>
-										
-										<div class="form-group form-group-label">
-											<div class="row">
-												<div class="col-md-10 col-md-push-1">
-													<label class="floating-label" for="email_code">CAPTCHA recieved by Email / 邮箱验证码 / 郵箱驗證碼</label>
 												</div>
 											</div>
 										</div>
@@ -229,7 +222,6 @@
                         $("#result").modal();
                         $("#msg").html(data.msg);
 			document.getElementById("tos").disabled = false; 
-
 			{if $geetest_html != null}
 			captcha.refresh();
 			{/if}
@@ -309,9 +301,6 @@ function time(o) {
 			1000)
 		}
 	}
-
-
-
     $(document).ready(function () {
         $("#email_verify").click(function () {
 			time($("#email_verify"));
@@ -353,7 +342,6 @@ function time(o) {
 		});
 		
 		captchaObj.appendTo("#embed-captcha");
-
 		captcha = captchaObj;
 		// 更多接口参考：http://www.geetest.com/install/sections/idx-client-sdk.html
     };
@@ -367,9 +355,3 @@ function time(o) {
 </script>
 
 {/if}
-
-
-
-
-
-	
