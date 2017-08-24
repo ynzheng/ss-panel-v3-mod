@@ -59,10 +59,11 @@
 													<input class="form-control" id="email_code" type="text">
 													<button id="email_verify" class="btn btn-block btn-brand-accent waves-attach waves-light">Get your CAPTCHA / 获取验证码 / 獲取驗證碼</button>
 												</div>
+											</div>
+											<div class="row">
 												<div class="col-md-10 col-md-push-1">
 													<label class="floating-label" for="email_code">CAPTCHA recieved by Email / 邮箱验证码 / 郵箱驗證碼</label>
 												</div>
-											</div>
 										</div>
 										{/if}
 										
