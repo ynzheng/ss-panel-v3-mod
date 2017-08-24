@@ -194,11 +194,11 @@
 <body class="page-orange">
 	<header class="header header-orange header-transparent header-waterfall ui-header">
 		<ul class="nav nav-list pull-left">
-			<div>
+			<li>
 				<a data-toggle="menu" href="#ui_menu">
 					<span class="icon icon-lg text-white">menu</span>
 				</a>
-			</div>
+			</li>
 		</ul>
 		
 		<ul class="nav nav-list pull-right">

@@ -22,7 +22,7 @@
 										</span>
 									</p>
 									
-									<div class="form-group form-group-label">
+										<div class="form-group form-group-label">
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
 													<label class="floating-label" for="name">Language / 语言 / 語言</label>
@@ -31,6 +31,8 @@
 														<option value="English">English</option>
 														<option value="Simplified_Chinese">简体中文</option>
 														<option value="Traditional_Chinese">正體中文</option>
+													</select>
+												</div>
 											</div>
 										</div>
 									
@@ -56,7 +58,7 @@
 										<div class="form-group form-group-label">
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
-													<label class="floating-label" for="email_code">CAPTCHA recieved by Email / 邮箱验证码 / 郵箱驗證碼</label><br><br>
+													<label class="floating-label" for="email_code">CAPTCHA recieved by Email / 邮箱验证码 / 郵箱驗證碼</label>
 													<input class="form-control" id="email_code" type="text">
 													<button id="email_verify" class="btn btn-block btn-brand-accent waves-attach waves-light">Get your CAPTCHA / 获取验证码 / 獲取驗證碼</button>
 												</div>
@@ -143,8 +145,8 @@
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
 													<p>Register means you agree to our <a href="/tos">terms of service</a>，you also guarantee that your information provided above are valid. Fail to provide valid information will result in account deletion.</p>
-													<p>注冊即代表同意<a href="/tos">用戶服務條款</a>，以及保證所錄入信息的真實性，如果信息不實會導致賬號被刪除。</p>
 													<p>注册即代表同意<a href="/tos">用户服务条款</a>，以及保证所录入信息的真实性，如有不实信息会导致账号被删除。</p>
+													<p>注冊即代表同意<a href="/tos">用戶服務條款</a>，以及保證所錄入信息的真實性，如果信息不實會導致賬號被刪除。</p>
 												</div>
 											</div>
 										</div>

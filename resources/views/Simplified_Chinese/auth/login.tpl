@@ -7,7 +7,7 @@
 				<div class="col-lg-4 col-lg-push-4 col-sm-6 col-sm-push-3">
 					<section class="content-inner">
 
-						<nav class="tab-nav margin-top-no">
+						<!--<nav class="tab-nav margin-top-no">
 							<ul class="nav nav-justified">
 								<li class="active">
 									<a class="waves-attach" data-toggle="tab" href="#passwd_login">密码登录</a>
@@ -22,7 +22,7 @@
 								</li>
 								{/if}
 							</ul>
-						</nav>
+						</nav>-->
 						<div class="card-inner">
 							<div class="tab-content">
 								<div class="tab-pane fade active in" id="passwd_login">
@@ -30,7 +30,7 @@
 										<div class="card-main">
 											<div class="card-header">
 												<div class="card-inner">
-													<h1 class="card-heading">登录到用户中心</h1>
+													<h1 class="card-heading">Login / 登录 / 登入</h1>
 												</div>
 											</div>
 											<div class="card-inner">
@@ -44,7 +44,7 @@
 													<div class="form-group form-group-label">
 														<div class="row">
 															<div class="col-md-10 col-md-push-1">
-																<label class="floating-label" for="email">邮箱</label>
+																<label class="floating-label" for="email">Email / 邮箱 / 電子信箱</label>
 																<input class="form-control" id="email" type="text" name="Email">
 															</div>
 														</div>
@@ -52,7 +52,7 @@
 													<div class="form-group form-group-label">
 														<div class="row">
 															<div class="col-md-10 col-md-push-1">
-																<label class="floating-label" for="passwd">密码</label>
+																<label class="floating-label" for="passwd">Password / 密码 / 密碼</label>
 																<input class="form-control" id="passwd" type="password" name="Password">
 															</div>
 														</div>
@@ -80,7 +80,7 @@
 													<div class="form-group">
 														<div class="row">
 															<div class="col-md-10 col-md-push-1">
-																<button id="login" type="submit" class="btn btn-block btn-brand waves-attach waves-light">登录</button>
+																<button id="login" type="submit" class="btn btn-block btn-brand waves-attach waves-light">Login / 登录 登入</button>
 															</div>
 														</div>
 													</div>
@@ -90,7 +90,7 @@
 															<div class="col-md-10 col-md-push-1">
 																<div class="checkbox checkbox-adv">
 																	<label for="remember_me">
-																		<input class="access-hide" value="week" id="remember_me" name="remember_me" type="checkbox">记住我
+																		<input class="access-hide" value="week" id="remember_me" name="remember_me" type="checkbox">Remember me / 记住我 / 記住我
 																		<span class="checkbox-circle"></span><span class="checkbox-circle-check"></span><span class="checkbox-circle-icon icon">done</span>
 																	</label>
 																</div>
@@ -148,8 +148,8 @@
 
 
 						<div class="clearfix">
-							<p class="margin-no-top pull-left"><a class="btn btn-flat btn-brand waves-attach" href="/password/reset">忘记密码</a></p>
-							<p class="margin-no-top pull-right"><a class="btn btn-flat btn-brand waves-attach" href="/auth/register">注册个帐号</a></p>
+							<p class="margin-no-top pull-left"><a class="btn btn-flat btn-brand waves-attach" href="/password/reset">Forgot Password / 忘记密码 / 忘記密碼</a></p>
+							<p class="margin-no-top pull-left"><a class="btn btn-flat btn-brand waves-attach" href="/auth/register">Register / 注册帐号 / 注冊賬戶</a></p>
 						</div>
 
 
@@ -174,13 +174,13 @@
 			if(typeof validate == 'undefined')
 			{
 				$("#result").modal();
-                $("#msg").html("请滑动验证码来完成验证。");
+                $("#msg").html("Slide to CAPTCHA / 滑动验证 / 滑動驗證");
 				return;
 			}
 
 			if (!validate) {
 				$("#result").modal();
-                $("#msg").html("请滑动验证码来完成验证。");
+                $("#msg").html("Slide to CAPTCHA / 滑动验证 / 滑動驗證");
 				return;
 			}
 
@@ -218,7 +218,7 @@
                 error:function(jqXHR){
 			$("#msg-error").hide(10);
 			$("#msg-error").show(100);
-			$("#msg-error-p").html("发生错误："+jqXHR.status);
+			$("#msg-error-p").html("Error Occured / 发生错误 / 發生錯誤："+jqXHR.status);
 					document.getElementById("login").disabled = false;
 			{if $geetest_html != null}
 			captcha.refresh();
@@ -280,13 +280,13 @@ $(document).ready(function () {
 						success: function (data) {
 							if (data.ret) {
 								$("#result").modal();
-								$("#msg").html("登录成功！");
+								$("#msg").html("Login Succeeded / 登录成功 / 登入成功");
 								window.setTimeout("location.href=/user/", {$config['jump_delay']});
 							}
 						},
 						error: function (jqXHR) {
 							$("#result").modal();
-							$("#msg").html("发生错误：" + jqXHR.status);
+							$("#msg").html("Error Occured / 发生错误 / 發生錯誤：" + jqXHR.status);
 						}
 					});
 
@@ -301,7 +301,7 @@ $(document).ready(function () {
 			error: function (jqXHR) {
 				if(jqXHR.status != 200 && jqXHR.status != 0) {
 					$("#result").modal();
-					$("#msg").html("发生错误：" + jqXHR.status);
+					$("#msg").html("Error Occured / 发生错误 / 發生錯誤：" + jqXHR.status);
 				}
 			}
 		});
