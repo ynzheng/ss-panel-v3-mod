@@ -64,6 +64,7 @@
 												<div class="col-md-10 col-md-push-1">
 													<label class="floating-label" for="email_code">CAPTCHA recieved by Email / 邮箱验证码 / 郵箱驗證碼</label>
 												</div>
+											</div>
 										</div>
 										{/if}
 										
